@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
 app.post("/telegram", (req, res) => {
   res.status(200).send("Telegram request received!");
-  console.log(req.body);
+  console.log(req);
 });
 
 app.listen(port, () => console.log(` Server running on port : port!`));
