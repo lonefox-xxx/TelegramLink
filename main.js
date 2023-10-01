@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/telegram", (req, res) => {
-  res.status(200);
+  res.status(200).send("Telegram request received!");
   console.log(req.body);
 });
 
